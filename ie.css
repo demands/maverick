@@ -1,0 +1,13 @@
+#anterior #menu ul li a {
+	display: inline-block;
+}
+
+#anterior #menu ul li a {
+	display: block;
+}
+
+#anterior #menu.none_selected {
+	width: 99%;
+	background-image: url(images/massage_menu.jpg);
+	background-position: left center;
+}

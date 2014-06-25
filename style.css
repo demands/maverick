@@ -1,0 +1,397 @@
+/*
+This CSS file is intended for
+Maverick Massage & Skincare Studio,
+http://www.drhauschkawoodstock.com.
+owned and operated by
+Ina Edmands, LMT, LE.
+
+It was created by Max Edmands
+http://www.maxedmands.com.
+
+Copyright 2008, all rights reserved.
+It's totally permissible, however, to
+take a look and see how things were
+coded.
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: url(images/header.jpg) no-repeat center top;
+	min-width: 680px;
+	font: 12pt Georgia, "Times New Roman", Times, serif;
+}
+
+#header {
+	height: 194px;
+}
+
+#header * {
+	display: none;
+}
+
+#navigation {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#navigation ul {
+	padding: 0 1em;
+	display: block;
+	list-style-type: none;
+}
+
+#navigation li {
+	float: left;
+	text-align: center;
+	padding: 0;
+	margin: 0 10px 0 0;
+}
+
+#navigation li a {
+	display: block;
+	width: 110px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	background-image: url(images/navbar_normal.gif);
+}
+
+#navigation li a:hover {
+	background: url(images/navbar_hover.gif);
+}
+
+#navigation li#home_nav a {	
+
+}
+
+body#home #navigation li#home_nav a {
+	background-image: url(images/navbar_selected.gif);
+}
+
+#navigation li#massage_nav a {
+	background-position: 477px;
+}
+
+body#massage #navigation li#massage_nav a {
+	background-image: url(images/navbar_selected.gif);
+}
+
+#navigation li#skincare_nav a {
+	background-position: 357px;
+}
+
+body#skincare #navigation li#skincare_nav a {
+	background-image: url(images/navbar_selected.gif);
+}
+
+#navigation li#directions_nav a {
+	background-position: 232px;
+}
+
+body#directions #navigation li#directions_nav a {
+	background-image: url(images/navbar_selected.gif);
+}
+
+#navigation li#contact_nav a {
+	background-position: 110px;
+}
+
+body#contact #navigation li#contact_nav a {
+	background-image: url(images/navbar_selected.gif);
+}
+
+#navigation li a span {
+	display: none;
+}
+
+#anterior, #footer {
+	max-width: 1000px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#anterior {
+	padding: 0 2em;
+}
+
+#anterior h2 {
+	font: bold 100% "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-bottom: 0.6em;
+}
+
+#anterior h2 a, #anterior h2 a:hover {
+	color: #d68b0e;
+}
+
+#anterior p {
+	margin-top: 0.6em;
+}
+
+#anterior a {
+	color: #d68b0e;
+}
+
+#anterior a:hover {
+	color: #da2f25;
+}
+
+#anterior #main {
+	margin: 75px 0 2em;
+}
+
+#home #anterior #main {
+	padding-left: 215px;
+	background: url(images/calendula_relaxation.jpg) no-repeat left center;
+}
+
+#home #anterior #main img {
+	display: none;
+}
+
+#home #anterior #gallery {
+	float: right;
+	width: 280px;
+	padding: 10px 10px 10px 5px;
+	border: 1px solid #666;
+}
+
+#home #anterior #gallery h2 {
+	margin: 0 10px;
+	padding: 0;
+}
+
+#home #anterior #gallery p {
+	font-size: 70%;
+	margin-left: 10px;
+}
+
+#home #anterior #gallery img {
+	margin: 10px 0 0 10px;
+	border: 1px solid #AAA;
+}
+
+#home #anterior #owner {
+	margin-right: 330px;
+}
+
+#home #anterior #owner img {
+	float: left;
+	padding-right: 20px;
+}
+
+#home #anterior #mission {
+	clear: left;
+	padding: 1em 0;
+	margin-right: 330px;
+}
+
+#home #anterior #mission p {
+	padding: 1em 2em;
+	border: 1px solid #AAA;
+	background: #fdeacc url(images/mission_gradient.jpg) repeat-y;
+}
+
+#massage #anterior .read_more, #skincare #anterior .read_more {
+	height: 20px;
+	background: url(images/read_more.gif) no-repeat top right;
+}
+
+#massage #anterior .read_more:hover, #skincare #anterior .read_more:hover {
+	background-image: url(images/read_more_hover.gif);
+	cursor: pointer;
+}
+
+#massage #anterior .read_more *, #skincare #anterior .read_more * {
+	display: none;
+}
+
+#massage #anterior .hide_this_button, #skincare #anterior .hide_this_button {
+	height: 20px;
+	display: block;
+	background: url(images/hide_this.gif) no-repeat right;
+	cursor: pointer;
+}
+
+#massage #anterior .hide_this_button:hover, #skincare #anterior .hide_this_button:hover {
+	background-image: url(images/hide_this_hover.gif);
+}
+
+#anterior #menu {
+	float: left;
+	width: 350px;
+	margin-bottom: 1em;
+	margin-right: 20px;
+}
+
+#anterior #menu.picture {
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-color: black;
+	width: 600px;
+}
+
+#anterior #menu.none_selected {
+	background-position: left center;
+	width: 100%;
+}
+
+#massage #anterior #menu.none_selected {
+	background-image: url(images/massage_menu.jpg);
+}
+
+#skincare #anterior #menu.none_selected {
+	background-image: url(images/skincare_menu.jpg);
+}
+
+#anterior #menu ul {
+	list-style-type: none;
+	width: 350px;
+	border-right: 4px solid #faa035;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-align: right;
+	background: white;
+}
+
+#anterior #menu ul li {
+	margin: 0;
+	padding: 0;
+}
+
+#anterior #menu ul li a {
+	display: block;
+	padding-right: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	line-height: 1.3em;
+	color: black;
+	text-decoration: none;
+}
+
+#anterior #menu ul li a:hover {
+	background: url(images/menu_gradient_hover.jpg);
+}
+
+#anterior #menu ul li.selected a,
+#anterior #menu ul li.selected a:hover {
+	background: #f7ac3b url(images/menu_gradient.jpg);
+}
+
+#anterior .treatment {
+	display: none;
+	margin-left: 620px;
+}
+
+#anterior .treatment.selected {
+	display: block;
+}
+
+#anterior .treatment img {
+	display: none;
+}
+
+#anterior .treatment table {
+	margin-top: 0.6em;
+	font-size: 90%;
+	width: 90%;
+}
+
+#anterior .treatment table td {
+	padding-right: 2em;
+}
+
+#directions #anterior #directions_panel {
+	float: right;
+	width: 210px;
+}
+
+#directions #anterior #directions_panel ul {
+	list-style-type: none;
+}
+
+#directions #anterior #directions_panel ul li {
+	font-size: 70%;
+	padding-bottom: 4px;
+}
+
+#directions #anterior #directions_panel ul li a {
+	font-size: 130%;
+	display: block;
+}
+
+#directions #anterior #directions_panel #written_directions {
+	border-top: 1px solid black;
+	margin-top: 1em;
+}
+
+#directions #anterior #map {
+	height: 500px;
+	margin-right: 240px;
+}
+
+#contact #anterior img {
+	display: block;
+	width: 300px;
+	float: left;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+
+#contact #anterior #information {
+	display: block;
+	width: 250px;
+	float: left;
+	margin-right: 15px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+#contact #anterior #cancellation_policy {
+	display: block;
+	width: 300px;
+	float: left;
+	padding-right: 15px;
+	margin-top: 15px;
+}
+
+#contact #anterior #information p {
+	margin: 0;
+}
+
+#contact #anterior #information dl {
+	margin-top: 10px;
+	font: 83% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#contact #anterior #information dl dt {
+	font-weight: bold;
+	float: left;
+	clear: left;
+}
+
+#contact #anterior #information dl dd {
+	margin-left: 75px;
+}
+
+#footer {
+	clear: both;
+	padding: 1em 0;
+	font-size: 80%;
+	text-align: center;
+}
+
+#footer hr {
+	margin: 2em 2em 1em 2em;
+	border: 2px solid #f7ac3b;
+}
+
+#footer p {
+	padding: 0 1em;
+}
+
+#footer a {
+	color: #8b6b2b;
+}
